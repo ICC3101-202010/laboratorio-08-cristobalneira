@@ -32,37 +32,40 @@ namespace Proyecto8Neira
         {
             string categoria = (string)TIPOLOCAL.SelectedItem;
             if (categoria == "Tienda")
-            {
+            { 
                 LOCAL.ResetText();
                 LOCAL.Items.Clear();
-                foreach (var item in tiendas2)
+                foreach (var item in Listas.tiendas)
                 {
                     LOCAL.Items.Add(item.Nombre);
                 }
             }
+
             else if (categoria == "Cine") 
             {
                 LOCAL.ResetText();
                 LOCAL.Items.Clear();
-                foreach (var item in cines2)
+                foreach (var item in Listas.cines)
                 {
                     LOCAL.Items.Add(item.Nombre);
                 }
             }
+
             else if (categoria == "Recreacional") 
             {
                 LOCAL.ResetText();
                 LOCAL.Items.Clear();
-                foreach (var item in recreacional2)
+                foreach (var item in Listas.recreacionales)
                 {
                     LOCAL.Items.Add(item.Nombre);
                 }
             }
+
             else if (categoria == "Restoran")
             {
                 LOCAL.ResetText();
                 LOCAL.Items.Clear();
-                foreach (var item in restoran2)
+                foreach (var item in Listas.restoranes)
                 {
                     LOCAL.Items.Add(item.Nombre);
                 }
@@ -77,12 +80,88 @@ namespace Proyecto8Neira
 
         private void LOCAL_SelectedIndexChanged(object sender, EventArgs e)
         {
+            string categoria = (string)TIPOLOCAL.SelectedItem;
             string local = (string)LOCAL.SelectedItem;
-            foreach (var item in collection)
+            listBox1.Items.Clear();
+            if (categoria == "Tienda")
             {
+                foreach (var item in Listas.tiendas)
+                {
+                    if (item.Nombre == local)
+                    {
 
+                        listBox1.Items.Add("Nombre: " + item.Nombre);
+                        listBox1.Items.Add("Nombre_Dueño: " + item.Nombre_Dueño);
+                        listBox1.Items.Add("Numero_Indicador: " + item.Numero_Indicador);
+                        listBox1.Items.Add("Horario_Inicio: " + item.horario_inicio);
+                        listBox1.Items.Add("Horario_Final: " + item.horario_final);
+                        listBox1.Items.Add("Categoria: " + item.categoria);
+                        listBox1.Items.Add("Caracteristica: " + item.caracteristica);
+                        break;
+                    }
+                }
             }
-            listBox1.Text="Nombre: "+
+            else if (categoria == "Cine")
+            {
+                foreach (var item in Listas.cines)
+                {
+                    if (item.Nombre == local)
+                    {
+
+                        listBox1.Items.Add("Nombre: " + item.Nombre);
+                        listBox1.Items.Add("Nombre_Dueño: " + item.Nombre_Dueño);
+                        listBox1.Items.Add("Numero_Indicador: " + item.Numero_Indicador);
+                        listBox1.Items.Add("Horario_Inicio: " + item.horario_inicio);
+                        listBox1.Items.Add("Horario_Final: " + item.horario_final);
+                        listBox1.Items.Add("Categoria: " + item.categoria);
+                        listBox1.Items.Add("Caracteristica: " + item.caracteristica);
+                        break;
+                    }
+                }
+            }
+            else if (categoria == "Recreacional")
+            {
+                foreach (var item in Listas.recreacionales)
+                {
+                    if (item.Nombre == local)
+                    {
+
+                        listBox1.Items.Add("Nombre: " + item.Nombre);
+                        listBox1.Items.Add("Nombre_Dueño: " + item.Nombre_Dueño);
+                        listBox1.Items.Add("Numero_Indicador: " + item.Numero_Indicador);
+                        listBox1.Items.Add("Horario_Inicio: " + item.horario_inicio);
+                        listBox1.Items.Add("Horario_Final: " + item.horario_final);
+                        listBox1.Items.Add("Categoria: " + item.categoria);
+                        listBox1.Items.Add("Caracteristica: " + item.caracteristica);
+                        break;
+                    }
+                }
+            }
+            else if (categoria == "Restoran")
+            {
+                foreach (var item in Listas.restoranes)
+                {
+                    if (item.Nombre == local)
+                    {
+
+                        listBox1.Items.Add("Nombre: " + item.Nombre);
+                        listBox1.Items.Add("Nombre_Dueño: " + item.Nombre_Dueño);
+                        listBox1.Items.Add("Numero_Indicador: " + item.Numero_Indicador);
+                        listBox1.Items.Add("Horario_Inicio: " + item.horario_inicio);
+                        listBox1.Items.Add("Horario_Final: " + item.horario_final);
+                        listBox1.Items.Add("Categoria: " + item.categoria);
+                        listBox1.Items.Add("Caracteristica: " + item.caracteristica);
+                        break;
+                    }
+                }
+            }
+
+
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

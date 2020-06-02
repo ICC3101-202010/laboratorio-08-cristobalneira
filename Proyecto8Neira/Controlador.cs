@@ -1,29 +1,24 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using Proyecto8Neira;
 
 namespace Proyecto8Neira
 {
+    //Areglar diseño y ver si funciona
     public partial class Controlador : UserControl
     {
-        //List<Tienda> tiendas, List<Cine> cines , List<Restoran> restoranes, List<Recreacional> recreacionales
+
         public Controlador()
         {
             InitializeComponent();
         }
-        public List<Tienda> tiendas1;
-        public List<Cine> cines1;
-        public List<Recreacional> recreacional1;
-        public List<Restoran> restoran1;
+        public static List<Tienda> tiendas1 = Listas.tiendas;
+        public static List<Cine> cines1 = Listas.cines;
+        public static List<Recreacional> recreacionales1 = Listas.recreacionales;
+        public static List<Restoran> restorans1 = Listas.restoranes;
+
         public void Controlador_Load(object sender, EventArgs e)
-        {   
+        {
             TipoLocalList.Items.Add("Tienda");
             TipoLocalList.Items.Add("Restoran");
             TipoLocalList.Items.Add("Cine");
@@ -43,13 +38,15 @@ namespace Proyecto8Neira
         public void AgregarL_Click(object sender, EventArgs e)
         {
             a += 1;
-            if (a%2!=0)
+            if (a % 2 != 0)
             {
+                label12.Hide();
                 label10.Show();
-                label11.Hide();
+                label11.Show();
             }
             else
             {
+                label12.Show();
                 label10.Hide();
                 label11.Hide();
             }
@@ -57,36 +54,73 @@ namespace Proyecto8Neira
             string categoria = (string)CategoriasList.SelectedItem;
             string caracteristica = (string)CaracteristicasList.SelectedItem;
 
-            if (tipolocal == "Tienda")
+            if (tipolocal == "Tienda" && a%2==0)
             {
                 Tienda t1 = new Tienda(Nombre_Local.Text.ToString(), Nombre_Dueño.Text.ToString(),
                     Numero_Indicador.Text.ToString(), Apertura.Text.ToString(), Cierre.Text.ToString(),
                     categoria, caracteristica);
-                tiendas1.Add(t1);
+                Listas.tiendas.Add(t1);
+                Nombre_Local.Clear();
+                Nombre_Dueño.Clear();
+                Numero_Indicador.Clear();
+                Apertura.Clear();
+                Cierre.Clear();
+                TipoLocalList.Text = "";
+                CategoriasList.Text = "";
+                CaracteristicasList.Text = "";
                 
+
             }
-            else if (tipolocal == "Cine")
+            else if (tipolocal == "Cine" && a % 2 == 0)
             {
                 Cine t1 = new Cine(Nombre_Local.Text.ToString(), Nombre_Dueño.Text.ToString(),
                     Numero_Indicador.Text.ToString(), Apertura.Text.ToString(), Cierre.Text.ToString(), categoria, caracteristica);
+                Listas.cines.Add(t1);
+                Nombre_Local.Clear();
+                Nombre_Dueño.Clear();
+                Numero_Indicador.Clear();
+                Apertura.Clear();
+                Cierre.Clear();
+                TipoLocalList.Text = "";
+                CategoriasList.Text = "";
+                CaracteristicasList.Text = ""; Nombre_Local.Clear();
+
             }
-            else if (tipolocal == "Recreacional")
+            else if (tipolocal == "Recreacional" && a % 2 == 0)
             {
                 Recreacional t1 = new Recreacional(Nombre_Local.Text.ToString(), Nombre_Dueño.Text.ToString(),
                     Numero_Indicador.Text.ToString(), Apertura.Text.ToString(), Cierre.Text.ToString(), categoria, caracteristica);
+                Listas.recreacionales.Add(t1);
+                Nombre_Local.Clear();
+                Nombre_Dueño.Clear();
+                Numero_Indicador.Clear();
+                Apertura.Clear();
+                Cierre.Clear();
+                TipoLocalList.Text = "";
+                CategoriasList.Text = "";
+                CaracteristicasList.Text = "";
             }
-            else if (tipolocal == "Restoran")
+            else if (tipolocal == "Restoran" && a % 2 == 0)
             {
                 Restoran t1 = new Restoran(Nombre_Local.Text.ToString(), Nombre_Dueño.Text.ToString(),
                     Numero_Indicador.Text.ToString(), Apertura.Text.ToString(), Cierre.Text.ToString(), categoria, caracteristica);
+                Listas.restoranes.Add(t1);
+                Nombre_Local.Clear();
+                Nombre_Dueño.Clear();
+                Numero_Indicador.Clear();
+                Apertura.Clear();
+                Cierre.Clear();
+                TipoLocalList.Text = "";
+                CategoriasList.Text = "";
+                CaracteristicasList.Text = "";
             }
         }
 
         private void domainUpDown1_SelectedItemChanged(object sender, EventArgs e)
         {
-            
+
         }
-        
+
 
         private void label9_Click(object sender, EventArgs e)
         {
@@ -95,6 +129,7 @@ namespace Proyecto8Neira
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
+
             string categoria = (string)TipoLocalList.SelectedItem;
             if (categoria == "Tienda")
             {

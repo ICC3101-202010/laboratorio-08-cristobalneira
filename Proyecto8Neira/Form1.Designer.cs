@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.Revisar = new System.Windows.Forms.Button();
             this.Mas = new System.Windows.Forms.Button();
             this.ListadeObjetos = new System.Windows.Forms.Button();
@@ -75,6 +76,7 @@
             // labelAlto
             // 
             this.labelAlto.AutoSize = true;
+            this.labelAlto.BackColor = System.Drawing.Color.Transparent;
             this.labelAlto.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelAlto.Location = new System.Drawing.Point(117, 55);
             this.labelAlto.Name = "labelAlto";
@@ -85,22 +87,27 @@
             // 
             // controladorTiendas1
             // 
-            this.controladorTiendas1.Location = new System.Drawing.Point(61, 33);
+            this.controladorTiendas1.BackColor = System.Drawing.Color.Transparent;
+            this.controladorTiendas1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("controladorTiendas1.BackgroundImage")));
+            this.controladorTiendas1.Location = new System.Drawing.Point(30, 12);
             this.controladorTiendas1.Name = "controladorTiendas1";
-            this.controladorTiendas1.Size = new System.Drawing.Size(466, 384);
+            this.controladorTiendas1.Size = new System.Drawing.Size(521, 405);
             this.controladorTiendas1.TabIndex = 6;
+            this.controladorTiendas1.Load += new System.EventHandler(this.controladorTiendas1_Load);
             // 
             // controlador
             // 
-            this.controlador.Location = new System.Drawing.Point(61, 150);
+            this.controlador.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("controlador.BackgroundImage")));
+            this.controlador.Location = new System.Drawing.Point(30, 12);
             this.controlador.Name = "controlador";
-            this.controlador.Size = new System.Drawing.Size(343, 253);
+            this.controlador.Size = new System.Drawing.Size(544, 405);
             this.controlador.TabIndex = 5;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Proyecto8Neira.Properties.Resources.foto1;
             this.ClientSize = new System.Drawing.Size(617, 429);
             this.Controls.Add(this.controladorTiendas1);
             this.Controls.Add(this.controlador);

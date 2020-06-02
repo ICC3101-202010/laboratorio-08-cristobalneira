@@ -25,5 +25,6 @@ namespace Proyecto8Neira
             this.categoria = categoriaa;
             this.caracteristica = caracteristicaa;
         }
+       
     }
 }
