@@ -224,32 +224,32 @@
             // TipoLocalList
             // 
             this.TipoLocalList.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.TipoLocalList.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TipoLocalList.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TipoLocalList.FormattingEnabled = true;
             this.TipoLocalList.Location = new System.Drawing.Point(145, 223);
             this.TipoLocalList.Name = "TipoLocalList";
-            this.TipoLocalList.Size = new System.Drawing.Size(121, 24);
+            this.TipoLocalList.Size = new System.Drawing.Size(121, 21);
             this.TipoLocalList.TabIndex = 22;
             this.TipoLocalList.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // CategoriasList
             // 
             this.CategoriasList.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CategoriasList.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CategoriasList.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CategoriasList.FormattingEnabled = true;
             this.CategoriasList.Location = new System.Drawing.Point(145, 249);
             this.CategoriasList.Name = "CategoriasList";
-            this.CategoriasList.Size = new System.Drawing.Size(121, 24);
+            this.CategoriasList.Size = new System.Drawing.Size(121, 21);
             this.CategoriasList.TabIndex = 23;
             // 
             // CaracteristicasList
             // 
             this.CaracteristicasList.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CaracteristicasList.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CaracteristicasList.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CaracteristicasList.FormattingEnabled = true;
             this.CaracteristicasList.Location = new System.Drawing.Point(145, 275);
             this.CaracteristicasList.Name = "CaracteristicasList";
-            this.CaracteristicasList.Size = new System.Drawing.Size(121, 24);
+            this.CaracteristicasList.Size = new System.Drawing.Size(121, 21);
             this.CaracteristicasList.TabIndex = 24;
             this.CaracteristicasList.SelectedIndexChanged += new System.EventHandler(this.CaracteristicasList_SelectedIndexChanged);
             // 
@@ -286,11 +286,11 @@
             this.label12.BackColor = System.Drawing.Color.Lime;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label12.Location = new System.Drawing.Point(341, 145);
+            this.label12.Location = new System.Drawing.Point(310, 145);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(107, 20);
+            this.label12.Size = new System.Drawing.Size(194, 40);
             this.label12.TabIndex = 27;
-            this.label12.Text = "Local Creado!";
+            this.label12.Text = "Local Creado!\r\nPuede crear otro si desea!";
             this.label12.Visible = false;
             // 
             // Controlador

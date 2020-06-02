@@ -33,6 +33,7 @@
             this.Mas = new System.Windows.Forms.Button();
             this.ListadeObjetos = new System.Windows.Forms.Button();
             this.labelAlto = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.controladorTiendas1 = new Proyecto8Neira.ControladorTiendas();
             this.controlador = new Proyecto8Neira.Controlador();
             this.SuspendLayout();
@@ -85,13 +86,25 @@
             this.labelAlto.Text = "Mall Alto La Dehesa";
             this.labelAlto.Click += new System.EventHandler(this.labelAlto_Click);
             // 
+            // button1
+            // 
+            this.button1.BackgroundImage = global::Proyecto8Neira.Properties.Resources.foto1;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(490, 12);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(105, 47);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "Salir";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // controladorTiendas1
             // 
             this.controladorTiendas1.BackColor = System.Drawing.Color.Transparent;
             this.controladorTiendas1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("controladorTiendas1.BackgroundImage")));
             this.controladorTiendas1.Location = new System.Drawing.Point(30, 12);
             this.controladorTiendas1.Name = "controladorTiendas1";
-            this.controladorTiendas1.Size = new System.Drawing.Size(521, 405);
+            this.controladorTiendas1.Size = new System.Drawing.Size(507, 393);
             this.controladorTiendas1.TabIndex = 6;
             this.controladorTiendas1.Load += new System.EventHandler(this.controladorTiendas1_Load);
             // 
@@ -100,8 +113,9 @@
             this.controlador.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("controlador.BackgroundImage")));
             this.controlador.Location = new System.Drawing.Point(30, 12);
             this.controlador.Name = "controlador";
-            this.controlador.Size = new System.Drawing.Size(544, 405);
+            this.controlador.Size = new System.Drawing.Size(507, 405);
             this.controlador.TabIndex = 5;
+            this.controlador.Load += new System.EventHandler(this.controlador_Load_1);
             // 
             // Form1
             // 
@@ -109,6 +123,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Proyecto8Neira.Properties.Resources.foto1;
             this.ClientSize = new System.Drawing.Size(617, 429);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.controladorTiendas1);
             this.Controls.Add(this.controlador);
             this.Controls.Add(this.labelAlto);
@@ -131,6 +146,7 @@
         private System.Windows.Forms.Label labelAlto;
         private Controlador controlador;
         private ControladorTiendas controladorTiendas1;
+        private System.Windows.Forms.Button button1;
     }
 }
 

@@ -10,3 +10,4 @@ C:\Users\Cristobal\Desktop\laboratorio-08-cristobalneira\Proyecto8Neira\obj\Debu
 C:\Users\Cristobal\Desktop\laboratorio-08-cristobalneira\Proyecto8Neira\obj\Debug\Proyecto8Neira.pdb
 C:\Users\Cristobal\Desktop\laboratorio-08-cristobalneira\Proyecto8Neira\obj\Debug\Proyecto8Neira.Controlador.resources
 C:\Users\Cristobal\Desktop\laboratorio-08-cristobalneira\Proyecto8Neira\obj\Debug\Proyecto8Neira.ControladorTiendas.resources
+C:\Users\Cristobal\Desktop\laboratorio-08-cristobalneira\Proyecto8Neira\obj\Debug\Proyecto8Neira.Form2.resources

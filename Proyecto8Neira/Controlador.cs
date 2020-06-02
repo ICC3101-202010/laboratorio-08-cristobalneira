@@ -32,7 +32,7 @@ namespace Proyecto8Neira
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-
+            label12.Hide();
         }
         int a = 0;
         public void AgregarL_Click(object sender, EventArgs e)
@@ -49,6 +49,9 @@ namespace Proyecto8Neira
                 label12.Show();
                 label10.Hide();
                 label11.Hide();
+                TipoLocalList.ResetText();
+                CategoriasList.ResetText();
+                CaracteristicasList.ResetText();
             }
             string tipolocal = (string)TipoLocalList.SelectedItem;
             string categoria = (string)CategoriasList.SelectedItem;
@@ -65,10 +68,15 @@ namespace Proyecto8Neira
                 Numero_Indicador.Clear();
                 Apertura.Clear();
                 Cierre.Clear();
-                TipoLocalList.Text = "";
-                CategoriasList.Text = "";
-                CaracteristicasList.Text = "";
-                
+                TipoLocalList.Items.Clear();
+                CategoriasList.Items.Clear();
+                CaracteristicasList.Items.Clear();
+
+                TipoLocalList.Items.Add("Tienda");
+                TipoLocalList.Items.Add("Restoran");
+                TipoLocalList.Items.Add("Cine");
+                TipoLocalList.Items.Add("Recreacional");
+
 
             }
             else if (tipolocal == "Cine" && a % 2 == 0)
@@ -81,9 +89,13 @@ namespace Proyecto8Neira
                 Numero_Indicador.Clear();
                 Apertura.Clear();
                 Cierre.Clear();
-                TipoLocalList.Text = "";
-                CategoriasList.Text = "";
-                CaracteristicasList.Text = ""; Nombre_Local.Clear();
+                TipoLocalList.Items.Clear();
+                CategoriasList.Items.Clear();
+                CaracteristicasList.Items.Clear();
+                TipoLocalList.Items.Add("Tienda");
+                TipoLocalList.Items.Add("Restoran");
+                TipoLocalList.Items.Add("Cine");
+                TipoLocalList.Items.Add("Recreacional");
 
             }
             else if (tipolocal == "Recreacional" && a % 2 == 0)
@@ -96,9 +108,13 @@ namespace Proyecto8Neira
                 Numero_Indicador.Clear();
                 Apertura.Clear();
                 Cierre.Clear();
-                TipoLocalList.Text = "";
-                CategoriasList.Text = "";
-                CaracteristicasList.Text = "";
+                TipoLocalList.Items.Clear();
+                CategoriasList.Items.Clear();
+                CaracteristicasList.Items.Clear();
+                TipoLocalList.Items.Add("Tienda");
+                TipoLocalList.Items.Add("Restoran");
+                TipoLocalList.Items.Add("Cine");
+                TipoLocalList.Items.Add("Recreacional");
             }
             else if (tipolocal == "Restoran" && a % 2 == 0)
             {
@@ -110,9 +126,15 @@ namespace Proyecto8Neira
                 Numero_Indicador.Clear();
                 Apertura.Clear();
                 Cierre.Clear();
-                TipoLocalList.Text = "";
-                CategoriasList.Text = "";
-                CaracteristicasList.Text = "";
+                TipoLocalList.ResetText();
+                TipoLocalList.ResetText();
+                TipoLocalList.Items.Clear();
+                CategoriasList.Items.Clear();
+                CaracteristicasList.Items.Clear();
+                TipoLocalList.Items.Add("Tienda");
+                TipoLocalList.Items.Add("Restoran");
+                TipoLocalList.Items.Add("Cine");
+                TipoLocalList.Items.Add("Recreacional");
             }
         }
 

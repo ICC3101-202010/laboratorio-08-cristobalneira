@@ -16,10 +16,7 @@ namespace Proyecto8Neira
         {
             InitializeComponent();
         }
-        public List<Tienda> tiendas2;
-        public List<Cine> cines2;
-        public List<Recreacional> recreacional2;
-        public List<Restoran> restoran2;
+
         private void ControladorTiendas_Load(object sender, EventArgs e)
         {
             TIPOLOCAL.Items.Add("Tienda");
@@ -31,9 +28,9 @@ namespace Proyecto8Neira
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             string categoria = (string)TIPOLOCAL.SelectedItem;
+            listBox1.Items.Clear();
             if (categoria == "Tienda")
             { 
-                LOCAL.ResetText();
                 LOCAL.Items.Clear();
                 foreach (var item in Listas.tiendas)
                 {
@@ -96,7 +93,7 @@ namespace Proyecto8Neira
                         listBox1.Items.Add("Horario_Inicio: " + item.horario_inicio);
                         listBox1.Items.Add("Horario_Final: " + item.horario_final);
                         listBox1.Items.Add("Categoria: " + item.categoria);
-                        listBox1.Items.Add("Caracteristica: " + item.caracteristica);
+                        listBox1.Items.Add("Cajeros: " + item.caracteristica);
                         break;
                     }
                 }
@@ -114,7 +111,7 @@ namespace Proyecto8Neira
                         listBox1.Items.Add("Horario_Inicio: " + item.horario_inicio);
                         listBox1.Items.Add("Horario_Final: " + item.horario_final);
                         listBox1.Items.Add("Categoria: " + item.categoria);
-                        listBox1.Items.Add("Caracteristica: " + item.caracteristica);
+                        listBox1.Items.Add("Ascientos: " + item.caracteristica);
                         break;
                     }
                 }
@@ -132,7 +129,7 @@ namespace Proyecto8Neira
                         listBox1.Items.Add("Horario_Inicio: " + item.horario_inicio);
                         listBox1.Items.Add("Horario_Final: " + item.horario_final);
                         listBox1.Items.Add("Categoria: " + item.categoria);
-                        listBox1.Items.Add("Caracteristica: " + item.caracteristica);
+                        listBox1.Items.Add("Publico: " + item.caracteristica);
                         break;
                     }
                 }
@@ -150,7 +147,7 @@ namespace Proyecto8Neira
                         listBox1.Items.Add("Horario_Inicio: " + item.horario_inicio);
                         listBox1.Items.Add("Horario_Final: " + item.horario_final);
                         listBox1.Items.Add("Categoria: " + item.categoria);
-                        listBox1.Items.Add("Caracteristica: " + item.caracteristica);
+                        listBox1.Items.Add("Mesas: " + item.caracteristica);
                         break;
                     }
                 }
