@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Controlador));
             this.Atras = new System.Windows.Forms.Button();
             this.Nombre_Local = new System.Windows.Forms.TextBox();
             this.Nombre_Dueño = new System.Windows.Forms.TextBox();
@@ -56,8 +55,8 @@
             // Atras
             // 
             this.Atras.BackColor = System.Drawing.Color.Transparent;
-            this.Atras.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Atras.BackgroundImage")));
-            this.Atras.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Atras.BackgroundImage = global::Proyecto8Neira.Properties.Resources.foto1;
+            this.Atras.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Atras.Location = new System.Drawing.Point(47, 330);
             this.Atras.Name = "Atras";
             this.Atras.Size = new System.Drawing.Size(163, 54);
@@ -110,8 +109,8 @@
             // AgregarL
             // 
             this.AgregarL.BackColor = System.Drawing.Color.Transparent;
-            this.AgregarL.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("AgregarL.BackgroundImage")));
-            this.AgregarL.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AgregarL.BackgroundImage = global::Proyecto8Neira.Properties.Resources.foto1;
+            this.AgregarL.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AgregarL.Location = new System.Drawing.Point(327, 330);
             this.AgregarL.Name = "AgregarL";
             this.AgregarL.Size = new System.Drawing.Size(177, 54);

@@ -28,14 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.Revisar = new System.Windows.Forms.Button();
             this.Mas = new System.Windows.Forms.Button();
             this.ListadeObjetos = new System.Windows.Forms.Button();
             this.labelAlto = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.controladorTiendas1 = new Proyecto8Neira.ControladorTiendas();
             this.controlador = new Proyecto8Neira.Controlador();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // Revisar
@@ -98,22 +102,39 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // imageList1
+            // 
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "Homero.png");
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = global::Proyecto8Neira.Properties.Resources.Homero;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(99, 91);
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click_1);
+            // 
             // controladorTiendas1
             // 
             this.controladorTiendas1.BackColor = System.Drawing.Color.Transparent;
             this.controladorTiendas1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("controladorTiendas1.BackgroundImage")));
-            this.controladorTiendas1.Location = new System.Drawing.Point(30, 12);
+            this.controladorTiendas1.Location = new System.Drawing.Point(30, 24);
             this.controladorTiendas1.Name = "controladorTiendas1";
-            this.controladorTiendas1.Size = new System.Drawing.Size(507, 393);
+            this.controladorTiendas1.Size = new System.Drawing.Size(565, 407);
             this.controladorTiendas1.TabIndex = 6;
             this.controladorTiendas1.Load += new System.EventHandler(this.controladorTiendas1_Load);
             // 
             // controlador
             // 
             this.controlador.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("controlador.BackgroundImage")));
-            this.controlador.Location = new System.Drawing.Point(30, 12);
+            this.controlador.Location = new System.Drawing.Point(12, 26);
             this.controlador.Name = "controlador";
-            this.controlador.Size = new System.Drawing.Size(507, 405);
+            this.controlador.Size = new System.Drawing.Size(525, 405);
             this.controlador.TabIndex = 5;
             this.controlador.Load += new System.EventHandler(this.controlador_Load_1);
             // 
@@ -123,6 +144,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Proyecto8Neira.Properties.Resources.foto1;
             this.ClientSize = new System.Drawing.Size(617, 429);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.controladorTiendas1);
             this.Controls.Add(this.controlador);
@@ -133,6 +155,7 @@
             this.Name = "Form1";
             this.Text = "Centro Comercial";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -147,6 +170,8 @@
         private Controlador controlador;
         private ControladorTiendas controladorTiendas1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ImageList imageList1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

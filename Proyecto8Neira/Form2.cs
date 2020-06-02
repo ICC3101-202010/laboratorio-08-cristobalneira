@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Proyecto8Neira
 {
-    public partial class Form2 : Form
+    public partial class ListasLocales : Form
     {
-        public Form2()
+        public ListasLocales()
         {
             InitializeComponent();
         }

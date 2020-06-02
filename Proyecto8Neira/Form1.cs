@@ -74,7 +74,7 @@ namespace Proyecto8Neira
 
         private void ListadeObjetos_Click(object sender, EventArgs e)
         {
-            Form2 obj1 = new Form2();
+            ListasLocales obj1 = new ListasLocales();
             obj1.Show();
         }
 
@@ -104,6 +104,16 @@ namespace Proyecto8Neira
         }
 
         private void controlador_Load_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click_1(object sender, EventArgs e)
         {
 
         }
