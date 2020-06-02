@@ -1,0 +1,12 @@
+C:\Users\Cristobal\Desktop\laboratorio-08-cristobalneira\Proyecto8Neira\bin\Debug\Proyecto8Neira.exe.config
+C:\Users\Cristobal\Desktop\laboratorio-08-cristobalneira\Proyecto8Neira\bin\Debug\Proyecto8Neira.exe
+C:\Users\Cristobal\Desktop\laboratorio-08-cristobalneira\Proyecto8Neira\bin\Debug\Proyecto8Neira.pdb
+C:\Users\Cristobal\Desktop\laboratorio-08-cristobalneira\Proyecto8Neira\obj\Debug\Proyecto8Neira.csprojAssemblyReference.cache
+C:\Users\Cristobal\Desktop\laboratorio-08-cristobalneira\Proyecto8Neira\obj\Debug\Proyecto8Neira.Form1.resources
+C:\Users\Cristobal\Desktop\laboratorio-08-cristobalneira\Proyecto8Neira\obj\Debug\Proyecto8Neira.Properties.Resources.resources
+C:\Users\Cristobal\Desktop\laboratorio-08-cristobalneira\Proyecto8Neira\obj\Debug\Proyecto8Neira.csproj.GenerateResource.cache
+C:\Users\Cristobal\Desktop\laboratorio-08-cristobalneira\Proyecto8Neira\obj\Debug\Proyecto8Neira.csproj.CoreCompileInputs.cache
+C:\Users\Cristobal\Desktop\laboratorio-08-cristobalneira\Proyecto8Neira\obj\Debug\Proyecto8Neira.exe
+C:\Users\Cristobal\Desktop\laboratorio-08-cristobalneira\Proyecto8Neira\obj\Debug\Proyecto8Neira.pdb
+C:\Users\Cristobal\Desktop\laboratorio-08-cristobalneira\Proyecto8Neira\obj\Debug\Proyecto8Neira.Controlador.resources
+C:\Users\Cristobal\Desktop\laboratorio-08-cristobalneira\Proyecto8Neira\obj\Debug\Proyecto8Neira.ControladorTiendas.resources
